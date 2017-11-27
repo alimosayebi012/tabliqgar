@@ -1,9 +1,9 @@
 <?php
 
 ob_start();
-define('API_KEY',"388918267:AAGH_cunP8Od7sUswAsp3wQmXQzGbVTcH6I");
-$botid = "388918267";
-@$Dev = 403592884;
+define('API_KEY',"508145283:AAGJjhzEwDqplEt0ZiAG55rS4E20xxKTtSg");
+$botid = "508145283";
+@$Dev = 356850459;
 //-----------------------------------------------
 function Poker($method,$datas=[]){
     $url = "https://api.telegram.org/bot".API_KEY."/".$method;
@@ -33,7 +33,7 @@ $update = json_decode(file_get_contents('php://input'));
 @$textmassage = $message->text;
 @$tc = $update->message->chat->type;
 @$token = API_KEY;
-@$Dev = 403592884;
+@$Dev = 356850459;
 @$join = $message->new_chat_member->id;
 @$rtm = $update->message->reply_to_message;
 @$rttext = $update->message->reply_to_message->text;
